@@ -29,7 +29,7 @@ const NavBar = () => {
             <a
               className="nav-link dropdown-toggle"
               href="#"
-              id="navbarDropdown"
+              id="stringAlgoDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -38,27 +38,37 @@ const NavBar = () => {
               String Algos
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="#">
-                Action
+              <a className="dropdown-item" href="/reverse">
+                String Reversal
               </a>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-              <div className="dropdown-divider"></div>
-              <a className="dropdown-item" href="#">
-                Something else here
+              <a className="dropdown-item" href="/palindrome">
+                Palindrome
               </a>
             </div>
           </li>
-          <li className="nav-item">
+          <li className="nav-item dropdown">
             <a
-              className="nav-link disabled"
+              className="nav-link dropdown-toggle"
               href="#"
-              tabindex="-1"
-              aria-disabled="true"
+              id="stringAlgoDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
             >
-              Disabled
+              Number Algos
             </a>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a className="dropdown-item" href="/int-reverse">
+                Integer Reversal
+              </a>
+              <a className="dropdown-item" href="/fibonacci">
+                Fibonacci
+              </a>
+              <a className="dropdown-item" href="/palindrome">
+                Fibonacci
+              </a>
+            </div>
           </li>
         </ul>
       </div>
