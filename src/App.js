@@ -7,11 +7,13 @@ import Fizzbuzz from "./pages/numbers/Fizzbuzz/Fizzbuzz";
 
 function App() {
   return (
-    <Router>
+    <>
+      <Router>
       <NavBar />
 
-      <Route exact path="/fizz" render={() => <Fizzbuzz />} />
-    </Router>
+        <Route exact path="/fizz" render={() => <Fizzbuzz />} />
+      </Router>
+    </>
   );
 }
 

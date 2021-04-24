@@ -4,8 +4,8 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <nav id="nav" className="navbar navbar-expand-lg navbar-dark sticky-top">
-      <Link className="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
+      <Link className="navbar-brand" to="/">
         AlgoApp
       </Link>
       <button
@@ -25,7 +25,7 @@ const NavBar = () => {
           <li className="nav-item dropdown">
             <Link
               className="nav-link dropdown-toggle"
-              href="#"
+              to="#"
               id="stringAlgoDropdown"
               role="button"
               data-toggle="dropdown"
@@ -35,13 +35,13 @@ const NavBar = () => {
               Number Algos
             </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <Link className="dropdown-item" href="/fibonacci">
+              <Link className="dropdown-item" to="/fibonacci">
                 Fibonacci
               </Link>
-              <Link className="dropdown-item" href="/palindrome">
+              <Link className="dropdown-item" to="/palindrome">
                 Fizzbuzz
               </Link>
-              <Link className="dropdown-item" href="/int-reverse">
+              <Link className="dropdown-item" to="/int-reverse">
                 Integer Reversal
               </Link>
             </div>
@@ -49,7 +49,7 @@ const NavBar = () => {
           <li className="nav-item dropdown">
             <Link
               className="nav-link dropdown-toggle"
-              href="#"
+              to="#"
               id="stringAlgoDropdown"
               role="button"
               data-toggle="dropdown"
@@ -59,10 +59,10 @@ const NavBar = () => {
               String Algos
             </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <Link className="dropdown-item" href="/reverse">
+              <Link className="dropdown-item" to="/reverse">
                 String Reversal
               </Link>
-              <Link className="dropdown-item" href="/palindrome">
+              <Link className="dropdown-item" to="/palindrome">
                 Palindrome
               </Link>
             </div>
