@@ -1,11 +1,17 @@
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
-import NavBar from "./components/NavBar"
-
-
+// Components
+import NavBar from "./components/NavBar";
+// Pages
+import Fizzbuzz from "./pages/numbers/Fizzbuzz/Fizzbuzz";
 
 function App() {
   return (
-    <NavBar/>
+    <Router>
+      <NavBar />
+
+      <Route exact path="/fizz" render={() => <Fizzbuzz />} />
+    </Router>
   );
 }
 
