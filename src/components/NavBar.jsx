@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
+      <Link className="navbar-brand" href="#">
         AlgoApp
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -20,34 +21,8 @@ const NavBar = () => {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Link
-            </a>
-          </li>
           <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              href="#"
-              id="stringAlgoDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              String Algos
-            </a>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="/reverse">
-                String Reversal
-              </a>
-              <a className="dropdown-item" href="/palindrome">
-                Palindrome
-              </a>
-            </div>
-          </li>
-          <li className="nav-item dropdown">
-            <a
+            <Link
               className="nav-link dropdown-toggle"
               href="#"
               id="stringAlgoDropdown"
@@ -57,17 +32,38 @@ const NavBar = () => {
               aria-expanded="false"
             >
               Number Algos
-            </a>
+            </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="/int-reverse">
+              <Link className="dropdown-item" href="/fibonacci">
+                Fibonacci
+              </Link>
+              <Link className="dropdown-item" href="/palindrome">
+                Fizzbuzz
+              </Link>
+              <Link className="dropdown-item" href="/int-reverse">
                 Integer Reversal
-              </a>
-              <a className="dropdown-item" href="/fibonacci">
-                Fibonacci
-              </a>
-              <a className="dropdown-item" href="/palindrome">
-                Fibonacci
-              </a>
+              </Link>
+            </div>
+          </li>
+          <li className="nav-item dropdown">
+            <Link
+              className="nav-link dropdown-toggle"
+              href="#"
+              id="stringAlgoDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              String Algos
+            </Link>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link className="dropdown-item" href="/reverse">
+                String Reversal
+              </Link>
+              <Link className="dropdown-item" href="/palindrome">
+                Palindrome
+              </Link>
             </div>
           </li>
         </ul>
