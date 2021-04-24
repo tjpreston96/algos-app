@@ -1,10 +1,10 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="nav" className="navbar navbar-expand-lg navbar-dark sticky-top">
       <Link className="navbar-brand" href="#">
         AlgoApp
       </Link>
