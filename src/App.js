@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 // Components
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
+import Footer from './components/Footer/Footer'
 // Pages
 import Fizzbuzz from "./pages/numbers/Fizzbuzz/Fizzbuzz";
 
@@ -9,10 +10,11 @@ function App() {
   return (
     <>
       <Router>
-      <NavBar />
+        <NavBar />
 
         <Route exact path="/fizzbuzz" render={() => <Fizzbuzz />} />
       </Router>
+      <Footer/>
     </>
   );
 }
