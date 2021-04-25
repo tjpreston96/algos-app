@@ -2,9 +2,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 // Components
 import NavBar from "./components/NavBar/NavBar";
-import Footer from './components/Footer/Footer'
+import Footer from "./components/Footer/Footer";
 // Pages
 import Fizzbuzz from "./pages/numbers/Fizzbuzz/Fizzbuzz";
+import StrReversal from "./pages/strings/StrReversal/StrReversal";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <NavBar />
 
         <Route exact path="/fizzbuzz" render={() => <Fizzbuzz />} />
+        <Route exact path="/str-reversal" render={() => <StrReversal />} />
       </Router>
-      <Footer/>
+      {/* <Footer /> */}
     </>
   );
 }
