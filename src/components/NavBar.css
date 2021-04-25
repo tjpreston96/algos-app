@@ -1,4 +1,12 @@
 nav {
-  background-color: #501b1d;
+  background-color: #6d6d6d;
   box-shadow: 0 0 5px 5px #343a40;
+}
+
+.dropdown-menu {
+  background-color: #6d6d6d;
+}
+
+.dropdown-menu > a {
+  color: #f8f9fa;
 }

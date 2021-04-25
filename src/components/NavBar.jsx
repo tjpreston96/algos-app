@@ -38,10 +38,10 @@ const NavBar = () => {
               <Link className="dropdown-item" to="/fibonacci">
                 Fibonacci
               </Link>
-              <Link className="dropdown-item" to="/palindrome">
+              <Link className="dropdown-item" to="/fizzbuzz">
                 Fizzbuzz
               </Link>
-              <Link className="dropdown-item" to="/int-reverse">
+              <Link className="dropdown-item" to="/int-reversal">
                 Integer Reversal
               </Link>
             </div>
@@ -59,7 +59,7 @@ const NavBar = () => {
               String Algos
             </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <Link className="dropdown-item" to="/reverse">
+              <Link className="dropdown-item" to="/str-reversal">
                 String Reversal
               </Link>
               <Link className="dropdown-item" to="/palindrome">

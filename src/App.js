@@ -11,7 +11,7 @@ function App() {
       <Router>
       <NavBar />
 
-        <Route exact path="/fizz" render={() => <Fizzbuzz />} />
+        <Route exact path="/fizzbuzz" render={() => <Fizzbuzz />} />
       </Router>
     </>
   );
