@@ -61,7 +61,7 @@ const Anagrams = () => {
             <button type="submit" hidden></button>
           </form>
           <h4>Output</h4>
-          {result ? "True" : "False"}
+          {result ? (result ? "True" : "False") : "Waiting for input..."}
         </div>
       </div>
     </>

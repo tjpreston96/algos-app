@@ -59,6 +59,9 @@ const NavBar = () => {
               String Algos
             </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link className="dropdown-item" to="/anagram">
+                Anagram
+              </Link>
               <Link className="dropdown-item" to="/str-reversal">
                 String Reversal
               </Link>
