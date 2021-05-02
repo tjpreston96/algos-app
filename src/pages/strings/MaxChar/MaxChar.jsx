@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const MaxChars = () => {
   const [str, setStr] = useState(null);
   const [result, setResult] = useState(null);
+  const [result2, setResult2] = useState(null);
 
   const onInputChange = (e) => {
     setStr(e.target.value);
@@ -36,7 +37,8 @@ const MaxChars = () => {
       }
     }
 
-    return setResult(maxChar);
+    setResult(`Character: ${maxChar}`);
+    setResult2(`Times seen: ${max}`);
   };
   return (
     <>
@@ -51,6 +53,8 @@ const MaxChars = () => {
               onChange={onInputChange}
             />
           </form>
+          <h4>Output</h4>
+          {result} <br /> {result2}
         </div>
       </div>
     </>
