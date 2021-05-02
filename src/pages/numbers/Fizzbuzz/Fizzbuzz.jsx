@@ -38,7 +38,6 @@ const Fizzbuzz = () => {
 
         <form onSubmit={onFormSubmit}>
           <div className="input-group ">
-            {/* <label htmlFor="">Please Enter Number: </label> */}
             <input
               type="text"
               className="form-control"
@@ -51,10 +50,11 @@ const Fizzbuzz = () => {
         <div>
           <h2>Output</h2>
           <p>
-            {/* {fizzArr.map((i) => (
-              <p>{i}</p>
-            ))} */}
-            {fizzArr.length ? fizzArr.join(', '): <div class="loader">Loading...</div>}
+            {fizzArr.length ? (
+              fizzArr.join(", ")
+            ) : (
+              <div class="loader">Loading...</div>
+            )}
           </p>
         </div>
       </div>
