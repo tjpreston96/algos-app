@@ -1,16 +1,40 @@
 import React, { useState } from "react";
 
 const Anagrams = () => {
-  const [str1, setStr1] = useState(null);
-  const [str2, setStr2] = useState(null);
+  const [strA, setStrA] = useState(null);
+  const [strB, setStrB] = useState(null);
   const [result, setResult] = useState(null);
 
-  const onStr1Change = (e) => {
-    setStr1(e.target.value);
+  const onStrAChange = (e) => {
+    setStrA(
+      e.target.value
+        .replace(/[^\w]/g, "")
+        .toLowerCase()
+        .split("")
+        .sort()
+        .join("")
+    );
   };
 
-  const onStr2Change = (e) => {
-    setStr2(e.target.value);
+  const onStrBChange = (e) => {
+    setStrB(
+      e.target.value
+        .replace(/[^\w]/g, "")
+        .toLowerCase()
+        .split("")
+        .sort()
+        .join("")
+    );
+  };
+
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+    isAnagram();
+    console.log(isAnagram());
+  };
+
+  const isAnagram = () => {
+    return setResult(strA === strB);
   };
 
   return (
@@ -18,23 +42,26 @@ const Anagrams = () => {
       <div className="margin-div">
         <div className="page">
           <h1>Anagrams</h1>
-          <form>
-            <label> String 1 </label>
+          <form onSubmit={onFormSubmit}>
+            <label> String A </label>
             <input
               type="text"
               className="form-control"
               placeholder="Please enter a {string}"
-              onChange={onStr1Change}
+              onChange={onStrAChange}
             />
             <br />
-            <label> String 2 </label>
+            <label> String B </label>
             <input
               type="text"
               className="form-control"
               placeholder="Please enter a {string}"
-              onChange={onStr2Change}
+              onChange={onStrBChange}
             />
+            <button type="submit" hidden></button>
           </form>
+          <h4>Output</h4>
+          {result ? "True" : "False"}
         </div>
       </div>
     </>
