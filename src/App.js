@@ -10,6 +10,7 @@ import IntReversal from "./pages/numbers/IntReversal/IntReversal";
 import Anagrams from "./pages/strings/Anagrams/Anagrams";
 import Palindrome from "./pages/strings/Palindrome/Palindrome";
 import StrReversal from "./pages/strings/StrReversal/StrReversal";
+import Vowels from "./pages/strings/Vowels/Vowels";
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
       <Route exact path="/fizzbuzz" render={() => <Fizzbuzz />} />
       <Route exact path="/int-reversal" render={() => <IntReversal />} />
       {/* ---- String Algo Routes ---- */}
-      <Route exact path="/anagram" render={() => <Anagrams />} />
+      <Route exact path="/anagrams" render={() => <Anagrams />} />
       <Route exact path="/palindrome" render={() => <Palindrome />} />
       <Route exact path="/str-reversal" render={() => <StrReversal />} />
+      <Route exact path="/vowels" render={() => <Vowels />} />
       {/* <Footer /> */}
     </>
   );

@@ -28,6 +28,7 @@ const Vowels = () => {
               type="text"
               className="form-control"
               placeholder="Please enter a {string}"
+              onChange={onInputChange}
             />
           </form>
           <h4>Output</h4>

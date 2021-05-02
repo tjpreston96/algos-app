@@ -59,14 +59,17 @@ const NavBar = () => {
               String Algos
             </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <Link className="dropdown-item" to="/anagram">
-                Anagram
+              <Link className="dropdown-item" to="/anagrams">
+                Anagrams
               </Link>
               <Link className="dropdown-item" to="/str-reversal">
                 String Reversal
               </Link>
               <Link className="dropdown-item" to="/palindrome">
                 Palindrome
+              </Link>
+              <Link className="dropdown-item" to="/vowels">
+                Vowels
               </Link>
             </div>
           </li>
