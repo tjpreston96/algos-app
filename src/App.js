@@ -7,8 +7,9 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Fizzbuzz from "./pages/numbers/Fizzbuzz/Fizzbuzz";
 import IntReversal from "./pages/numbers/IntReversal/IntReversal";
-import StrReversal from "./pages/strings/StrReversal/StrReversal";
+import Anagrams from "./pages/strings/Anagrams/Anagrams";
 import Palindrome from "./pages/strings/Palindrome/Palindrome";
+import StrReversal from "./pages/strings/StrReversal/StrReversal";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route exact path="/fizzbuzz" render={() => <Fizzbuzz />} />
       <Route exact path="/int-reversal" render={() => <IntReversal />} />
       {/* ---- String Algo Routes ---- */}
+      <Route exact path="/anagram" render={() => <Anagrams />} />
       <Route exact path="/palindrome" render={() => <Palindrome />} />
       <Route exact path="/str-reversal" render={() => <StrReversal />} />
       {/* <Footer /> */}
