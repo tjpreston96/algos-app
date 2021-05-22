@@ -9,6 +9,7 @@ import Fibonacci from "./pages/numbers/Fibonacci/Fibonacci";
 import Fizzbuzz from "./pages/numbers/Fizzbuzz/Fizzbuzz";
 import IntReversal from "./pages/numbers/IntReversal/IntReversal";
 import Anagrams from "./pages/strings/Anagrams/Anagrams";
+import Capitalize from "./pages/strings/Capitalize/Capitalize";
 import MaxChars from "./pages/strings/MaxChar/MaxChar";
 import Palindrome from "./pages/strings/Palindrome/Palindrome";
 import StrReversal from "./pages/strings/StrReversal/StrReversal";
@@ -25,6 +26,7 @@ function App() {
       <Route exact path="/int-reversal" render={() => <IntReversal />} />
       {/* ---- String Algo Routes ---- */}
       <Route exact path="/anagrams" render={() => <Anagrams />} />
+      <Route exact path="/capitalize" render={() => <Capitalize />} />
       <Route exact path="/maxChar" render={() => <MaxChars />} />
       <Route exact path="/palindrome" render={() => <Palindrome />} />
       <Route exact path="/str-reversal" render={() => <StrReversal />} />
