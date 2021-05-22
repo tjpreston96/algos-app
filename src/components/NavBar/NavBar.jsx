@@ -62,6 +62,9 @@ const NavBar = () => {
               <Link className="dropdown-item" to="/anagrams">
                 Anagrams
               </Link>
+              <Link className="dropdown-item" to="/capitalize">
+                Capitalize
+              </Link>
               <Link className="dropdown-item" to="/maxChar">
                 MaxChar
               </Link>
