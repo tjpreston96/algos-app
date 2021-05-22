@@ -35,6 +35,9 @@ const NavBar = () => {
               Number Algos
             </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link className="dropdown-item" to="/chunk">
+                Chunk
+              </Link>
               <Link className="dropdown-item" to="/fibonacci">
                 Fibonacci
               </Link>
