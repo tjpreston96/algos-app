@@ -34,8 +34,6 @@ const Fibonacci = () => {
     fib();
   };
 
-
-
   return (
     <>
       <div className="margin-div">
