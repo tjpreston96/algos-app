@@ -53,7 +53,8 @@ const MaxChars = () => {
               onChange={onInputChange}
             />
           </form>
-          <h4>Output</h4>
+          <br />
+          <h3>Output</h3>
           {result} <br /> {result2}
         </div>
       </div>

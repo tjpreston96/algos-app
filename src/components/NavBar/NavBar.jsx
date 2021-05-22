@@ -65,11 +65,11 @@ const NavBar = () => {
               <Link className="dropdown-item" to="/maxChar">
                 MaxChar
               </Link>
-              <Link className="dropdown-item" to="/str-reversal">
-                String Reversal
-              </Link>
               <Link className="dropdown-item" to="/palindrome">
                 Palindrome
+              </Link>
+              <Link className="dropdown-item" to="/str-reversal">
+                String Reversal
               </Link>
               <Link className="dropdown-item" to="/vowels">
                 Vowels
