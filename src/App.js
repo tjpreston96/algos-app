@@ -4,12 +4,13 @@ import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 // Pages
-import Home from "./pages/Home/Home";
-import Fibonacci from "./pages/numbers/Fibonacci/Fibonacci";
-import Fizzbuzz from "./pages/numbers/Fizzbuzz/Fizzbuzz";
-import IntReversal from "./pages/numbers/IntReversal/IntReversal";
 import Anagrams from "./pages/strings/Anagrams/Anagrams";
 import Capitalize from "./pages/strings/Capitalize/Capitalize";
+import Chunk from "./pages/numbers/Chunk/Chunk";
+import Fibonacci from "./pages/numbers/Fibonacci/Fibonacci";
+import Fizzbuzz from "./pages/numbers/Fizzbuzz/Fizzbuzz";
+import Home from "./pages/Home/Home";
+import IntReversal from "./pages/numbers/IntReversal/IntReversal";
 import MaxChars from "./pages/strings/MaxChar/MaxChar";
 import Palindrome from "./pages/strings/Palindrome/Palindrome";
 import StrReversal from "./pages/strings/StrReversal/StrReversal";
@@ -21,6 +22,7 @@ function App() {
       <NavBar />
       <Route exact path="/" render={() => <Home />} />
       {/* ---- Number Algo Routes ---- */}
+      <Route exact path="/chunk" render={() => <Chunk />} />
       <Route exact path="/fibonacci-recursive" render={() => <Fibonacci />} />
       <Route exact path="/fizzbuzz" render={() => <Fizzbuzz />} />
       <Route exact path="/int-reversal" render={() => <IntReversal />} />

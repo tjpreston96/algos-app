@@ -1,20 +1,38 @@
 import React, { useState } from "react";
 
 const Chunk = () => {
-  const [arr, setArr] = useState(null);
-  const [chunkSize, setChunkSize] = useState(null);
+  const [array, setArray] = useState(null);
+  const [size, setSize] = useState(null);
+  const [result, setResult] = useState(null);
 
   const onFormSubmit = (e) => {
     e.preventDefault();
+    chunk();
   };
 
   const onArrayChange = (e) => {
-    setArr(e.target.value);
+    setArray(e.target.value);
   };
 
   const onChunkChange = (e) => {
-    setChunkSize(e.target.value);
+    setSize(e.target.value);
   };
+
+  const chunk = () => {
+    const chunked = [];
+
+    for (let elem of array) {
+      const last = chunked[chunked.length - 1];
+
+      if (!last || last.length === size) {
+        chunked.push([elem]);
+      } else {
+        last.push(elem);
+      }
+    }
+    setResult(chunked);
+  };
+
   return (
     <>
       <div className="margin-div">
@@ -27,6 +45,7 @@ const Chunk = () => {
               type="text"
               className="form-control"
             />
+            Example Array: [2, 3, 7, 4, 5, 6, 3, 45, 64, 97]
             <input
               onChange={onChunkChange}
               placeholder="Please enter desired # of chunks"
@@ -34,7 +53,6 @@ const Chunk = () => {
               className="form-control"
             />
           </form>
-          'Example Array: [[2,3],[7,4,5],[6,3,45,64,97]]'
         </div>
       </div>
     </>
